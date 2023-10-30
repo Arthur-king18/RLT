@@ -8,7 +8,13 @@ pip install poetry
 ```
 poetry shell && poetry install
 ```
+## Setup .env keys
 
+```
+BOT_API_TOKEN='bot token'
+DATABASE_URL='mongo_db_url'
+
+```
 ## Run
 
 ```python
