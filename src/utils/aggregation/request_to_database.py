@@ -43,6 +43,9 @@ class RequestToDataBase:
             results_dict[date_str] = total_value
 
         labels = list(results_dict.keys())
+        for i, v in enumerate(labels):
+            labels[i] = labels[i].replace(" ", "T")
+
         dataset = list(results_dict.values())
 
         return {"dataset": dataset, "labels": labels}
@@ -65,6 +68,8 @@ class RequestToDataBase:
             results_dict[date_str] = total_value
 
         labels = list(results_dict.keys())
+        for i, v in enumerate(labels):
+            labels[i] = labels[i].replace(" ", "T")
         dataset = list(results_dict.values())
 
         return {"dataset": dataset, "labels": labels}
