@@ -21,14 +21,14 @@ DATABASE_URL='mongo_db_url'
 python3 main.py
 ```
 
-# Json filter
+## Json filter
 
 ``` python
 class IsJsonRequest(Filter):
     async def check(self, message: types.Message) -> bool:
         return message.text.startswith("{") and message.text.endswith("}")
 ```
-## Use
+### Use
 
 ``` python
 @dp.message_handler(IsJsonRequest())
