@@ -1,1 +1,1 @@
-from src.filters.is_not_register_filter import IsNotRegister
+from src.filters.is_json_request import IsJsonRequest
