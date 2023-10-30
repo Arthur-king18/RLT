@@ -10,4 +10,4 @@ async def start_handler(message: types.Message):
 
     text = firstname + lastname if lastname is not None else firstname
 
-    await bot.send_message(message.chat.id, md.escape_md(f"Hi, {text}"))
+    await bot.send_message(message.chat.id, f"Hi, {text}")
